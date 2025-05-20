@@ -4,9 +4,7 @@ from googletrans import Translator
 
 
 async def translate_text(image, lg):
-    pre_process_image = image
-
-    img = Image.open(pre_process_image)
+    img = Image.open(image)
     ocr_result = pytesseract.image_to_string(img, lang=lg)
     translator = Translator()
     translated = await translator.translate(ocr_result)
