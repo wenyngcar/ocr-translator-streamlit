@@ -50,3 +50,8 @@ Install dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
+## 🏃 To run application
+``` bash 
+streamlit run app.py
+ ```
